@@ -3,6 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"build": "webpack --config web/webpack.config.js",
+		"now-start": "serve",
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
 		"web": "webpack-dev-server --config web/webpack.config.js --port 3000"
@@ -10,7 +12,8 @@
 	"dependencies": {
 		"react": "~15.4.0",
 		"react-native": "0.41.2",
-		"react-native-web": "^0.0.70"
+		"react-native-web": "^0.0.70",
+		"serve": "^5.1.3"
 	},
 	"devDependencies": {
 		"babel-jest": "18.0.0",
